@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Node / Netlify
+node_modules/
+.netlify/
+
+# Env files
+.env*
+!.env.example
