@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sisu AI - Primary Horizontal Logo (Light Background)
+  Use on: white/light surfaces (#FFFFFF, #F8FAFC)
+  Concept: "Spark" - a 4-pointed star mark with a secondary accent spark
+             Main spark = the transformative moment AI creates
+             Secondary spark = intelligence, insight, the AI thinking
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none" role="img" aria-label="Sisu AI">
+  <defs>
+    <!-- Icon gradient: blue at bottom → cyan at top (ascending = growth) -->
+    <linearGradient id="iconGrad" x1="20" y1="50" x2="40" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <!-- Text gradient: left to right for "AI" wordmark -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+
+    <!-- Soft glow for center node -->
+    <radialGradient id="glowGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- === ICON MARK (60x60) === -->
+  <!-- Main spark: 4-pointed star with curved concave sides -->
+  <path d="M30 8 C30 20 20 30 8 30 C20 30 30 40 30 52 C30 40 40 30 52 30 C40 30 30 20 30 8 Z" fill="url(#iconGrad)"/>
+  <!-- Secondary accent spark (upper-right) -->
+  <path d="M46 12 C46 16 42 20 38 20 C42 20 46 24 46 28 C46 24 50 20 54 20 C50 20 46 16 46 12 Z" fill="url(#iconGrad)" opacity="0.7"/>
+
+  <!-- === WORDMARK === -->
+
+  <!-- "SISU" - bold, midnight navy, wide tracking -->
+  <text
+    x="74" y="41"
+    font-family="Inter, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="800"
+    font-size="28"
+    letter-spacing="3.5"
+    fill="#0B1120">SISU</text>
+
+  <!-- Thin divider -->
+  <line x1="162" y1="18" x2="162" y2="44" stroke="#CBD5E1" stroke-width="1"/>
+
+  <!-- "AI" - light weight, brand gradient -->
+  <text
+    x="170" y="41"
+    font-family="Inter, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="300"
+    font-size="28"
+    letter-spacing="3.5"
+    fill="url(#textGrad)">AI</text>
+</svg>

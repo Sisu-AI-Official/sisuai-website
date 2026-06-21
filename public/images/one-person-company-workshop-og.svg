@@ -1,0 +1,54 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1120"/>
+      <stop offset="100%" stop-color="#0F1A30"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0.85" cy="0.15" r="0.55">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0.05" cy="0.95" r="0.65">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="ctaGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background layers -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- top eyebrow -->
+  <text x="600" y="86" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="26" fill="#F8F8F8" letter-spacing="3" text-anchor="middle">SISU AI  ·  WORKSHOP  ·  HÀ NỘI 10/05/2026</text>
+
+  <!-- pre-headline -->
+  <text x="600" y="178" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="500" font-size="50" fill="#F8F8F8" text-anchor="middle">Bước vào kỷ nguyên</text>
+
+  <!-- HERO: One-Person Company -->
+  <text x="600" y="305" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="900" font-size="108" fill="url(#textGrad)" text-anchor="middle" letter-spacing="-2">One-Person Company.</text>
+
+  <!-- supporting copy -->
+  <text x="600" y="395" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600" font-size="38" fill="#FFFFFF" text-anchor="middle">1 ngày dựng hệ điều hành AI gánh việc của 2-3 nhân sự.</text>
+  <text x="600" y="445" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="400" font-size="28" fill="#F8F8F8" text-anchor="middle">Cầm tay chỉ việc cho founder Việt. Không thuê thêm ai. Không phải code.</text>
+
+  <!-- divider -->
+  <line x1="80" y1="510" x2="1120" y2="510" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- bottom row: urgency badge (left) + CTA button (right) -->
+  <rect x="80" y="525" width="450" height="62" rx="31" fill="#F97316" fill-opacity="0.16" stroke="#F97316" stroke-opacity="0.55" stroke-width="1.5"/>
+  <text x="305" y="566" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="24" fill="#FB923C" letter-spacing="1.8" text-anchor="middle">CHỈ 10 CHỖ  ·  ĐÓNG KHI ĐỦ</text>
+
+  <!-- CTA button -->
+  <rect x="780" y="525" width="340" height="62" rx="31" fill="url(#ctaGrad)"/>
+  <text x="935" y="568" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="32" fill="#FFFFFF" text-anchor="middle">Giữ chỗ ngay</text>
+  <text x="1085" y="568" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="800" font-size="36" fill="#FFFFFF" text-anchor="middle">→</text>
+</svg>

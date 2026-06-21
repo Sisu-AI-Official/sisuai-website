@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Sisu AI - Icon Mark Only (Spark)
+  Use for: favicons, app icons, avatar thumbnails, watermarks
+  Transparent background - works on both light and dark surfaces
+  Concept: Main 4-pointed spark + secondary accent spark (upper-right)
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" fill="none" role="img" aria-label="Sisu AI icon">
+  <defs>
+    <linearGradient id="g" x1="20" y1="50" x2="40" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ambient glow -->
+  <circle cx="30" cy="30" r="18" fill="url(#glow)"/>
+
+  <!-- Spark icon mark -->
+  <path d="M30 8 C30 20 20 30 8 30 C20 30 30 40 30 52 C30 40 40 30 52 30 C40 30 30 20 30 8 Z" fill="url(#g)"/>
+  <path d="M46 12 C46 16 42 20 38 20 C42 20 46 24 46 28 C46 24 50 20 54 20 C50 20 46 16 46 12 Z" fill="url(#g)" opacity="0.7"/>
+</svg>

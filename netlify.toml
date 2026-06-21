@@ -1,0 +1,15 @@
+# Netlify configuration for the sisuai.net site.
+#
+# In Netlify, set this site's "Base directory" to:  sites/sisuai.net
+# All paths below are relative to that base directory.
+#
+# Branch deploys:
+#   main     -> production  (sisuai.net)
+#   staging  -> staging     (staging.sisuai.net or staging--<site>.netlify.app)
+
+[build]
+  publish = "public"
+  functions = "functions"
+
+[functions]
+  node_bundler = "esbuild"
