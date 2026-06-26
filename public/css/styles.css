@@ -918,6 +918,25 @@ section {
     font-size: 0.875rem;
 }
 
+.footer-legal {
+    margin: 0 auto 1rem;
+    max-width: 60rem;
+    line-height: 1.7;
+}
+
+.footer-legal .footer-legal-name {
+    color: var(--clr-pure-white);
+    font-weight: 600;
+}
+
+.footer-legal a {
+    color: inherit;
+}
+
+.footer-legal a:hover {
+    color: var(--clr-pure-white);
+}
+
 /* --- Contact Section --- */
 .contact-layout {
     display: grid;
