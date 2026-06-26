@@ -919,14 +919,20 @@ section {
 }
 
 .footer-legal {
-    margin: 0 auto 1rem;
-    max-width: 60rem;
-    line-height: 1.7;
+    margin-top: 1rem;
+    max-width: 22rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--clr-steel);
+    opacity: 0.7;
+}
+
+.footer-legal p {
+    margin: 0;
 }
 
 .footer-legal .footer-legal-name {
-    color: var(--clr-pure-white);
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .footer-legal a {
