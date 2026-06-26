@@ -918,6 +918,31 @@ section {
     font-size: 0.875rem;
 }
 
+.footer-legal {
+    margin-top: 1rem;
+    max-width: 22rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--clr-steel);
+    opacity: 0.7;
+}
+
+.footer-legal p {
+    margin: 0;
+}
+
+.footer-legal .footer-legal-name {
+    font-weight: 500;
+}
+
+.footer-legal a {
+    color: inherit;
+}
+
+.footer-legal a:hover {
+    color: var(--clr-pure-white);
+}
+
 /* --- Contact Section --- */
 .contact-layout {
     display: grid;
