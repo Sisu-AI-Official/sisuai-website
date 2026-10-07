@@ -11,7 +11,7 @@ const FROM_ADDRESS = 'Sisu AI <info@sisuai.net>';
 /**
  * Build HTML email body for the admin notification
  */
-function buildAdminEmailHtml({ name, email, company, website, message, budget }) {
+function buildAdminEmailHtml({ name, email, company, website, message, budget, interest }) {
     return `
 <!DOCTYPE html>
 <html>
@@ -54,6 +54,10 @@ function buildAdminEmailHtml({ name, email, company, website, message, budget })
       <div class="field">
         <div class="label">Company Website</div>
         <div class="value">${website ? `<a href="${escapeHtml(website)}" style="color:#3B82F6;" target="_blank">${escapeHtml(website)}</a>` : '—'}</div>
+      </div>
+      <div class="field">
+        <div class="label">Interested In</div>
+        <div class="value">${escapeHtml(interest || '—')}</div>
       </div>
       <div class="field">
         <div class="label">Budget</div>
@@ -108,11 +112,11 @@ function buildConfirmationEmailHtml({ name }) {
     </div>
     <div class="body">
       <p>Hi <span class="highlight">${escapeHtml(name)}</span>,</p>
-      <p>Thank you for getting in touch with us! We've received your inquiry and are excited to learn more about your business and how we can help transform it with intelligent automation.</p>
+      <p>Thank you for getting in touch with us! We've received your inquiry and are excited to learn more about your business and how our AI agents can help your team.</p>
       <div class="cta-box">
         <p>⏱ Our team will review your request and get back to you within <strong>1–2 business days</strong>.</p>
       </div>
-      <p>In the meantime, feel free to explore more about our AI solutions and the impact we've delivered for businesses like yours at <a href="https://sisuai.net" style="color:#3B82F6;">sisuai.net</a>.</p>
+      <p>In the meantime, you can explore the Sisu product suite at <a href="https://sisuai.net" style="color:#3B82F6;">sisuai.net</a>.</p>
       <p>Looking forward to speaking with you!</p>
       <p><span class="highlight">The Sisu AI Team</span></p>
     </div>
@@ -190,7 +194,7 @@ exports.handler = async (event) => {
         return { statusCode: 400, headers, body: JSON.stringify({ error: 'Invalid JSON body' }) };
     }
 
-    const { name, email, company, website, message, budget } = payload;
+    const { name, email, company, website, message, budget, interest } = payload;
 
     const validationError = validatePayload({ name, email, message });
     if (validationError) {
@@ -203,7 +207,7 @@ exports.handler = async (event) => {
             sendEmail({
                 to: [ADMIN_EMAIL],
                 subject: `New Contact: ${name.trim()} from ${company ? company.trim() : 'Unknown Company'}`,
-                html: buildAdminEmailHtml({ name: name.trim(), email: email.trim(), company, website, message: message.trim(), budget }),
+                html: buildAdminEmailHtml({ name: name.trim(), email: email.trim(), company, website, message: message.trim(), budget, interest }),
             }),
             sendEmail({
                 to: [email.trim()],
