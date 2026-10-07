@@ -2021,17 +2021,6 @@ h4 {
     font-size: 16.5px;
 }
 
-.company-copy .company-founder {
-    margin-top: 16px;
-}
-
-.company-founder a {
-    color: var(--ink-2);
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
 .company-cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
