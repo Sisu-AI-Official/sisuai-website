@@ -4,535 +4,921 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sisu AI - Transform Your Business Operations</title>
+    <title>Sisu AI | AI Agents for Marketing, Sales &amp; Customer Teams</title>
     <meta name="description"
-        content="Deploy intelligent AI agents and automation systems that streamline workflows, boost efficiency, and scale your growth - from vision to execution in 6-8 weeks.">
+        content="Sisu AI builds production-grade AI agents for marketing, sales and customer teams. On-brand content, market intelligence, lead qualification and 24/7 customer conversations, governed by your rules and live in weeks.">
+    <meta name="theme-color" content="#0B1120">
+    <link rel="canonical" href="https://sisuai.net/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sisuai.net/">
+    <meta property="og:site_name" content="Sisu AI">
+    <meta property="og:title" content="Sisu AI | AI Agents for Marketing, Sales & Customer Teams">
+    <meta property="og:description"
+        content="Production-grade AI agents that create on-brand content, find and qualify demand, and answer customers around the clock. Live in weeks.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sisu AI | AI Agents for Marketing, Sales & Customer Teams">
+    <meta name="twitter:description"
+        content="Production-grade AI agents that create on-brand content, find and qualify demand, and answer customers around the clock.">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="branding/sisu-ai-icon-mark-spark-favicon.svg">
 
-    <!-- Google Fonts: Inter -->
+    <!-- Fonts: Inter Tight (display), Inter (text), JetBrains Mono (labels) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
         rel="stylesheet">
 
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/styles.css">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css/site.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Sisu AI",
+        "legalName": "Artificial Intelligence Automation Solutions Joint Stock Company",
+        "url": "https://sisuai.net/",
+        "logo": "https://sisuai.net/branding/sisu-ai-logo-primary-horizontal-light-bg.svg",
+        "email": "info@sisuai.net",
+        "telephone": "+84886098861",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "No. 30-32 Vuong Thua Vu, Khuong Dinh Ward",
+            "addressLocality": "Hanoi",
+            "addressCountry": "VN"
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="branding/sisu-ai-logo-primary-horizontal-light-bg.svg" alt="Sisu AI Logo" class="logo-light">
-                <img src="branding/sisu-ai-logo-primary-horizontal-dark-bg.svg" alt="Sisu AI Logo" class="logo-dark">
+    <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <linearGradient id="cg" x1="20" y1="50" x2="40" y2="10" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#3B82F6" />
+                <stop offset="1" stop-color="#06B6D4" />
+            </linearGradient>
+        </defs>
+    </svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#top" class="nav-logo" aria-label="Sisu AI home">
+                <img src="branding/sisu-ai-logo-primary-horizontal-light-bg.svg" alt="Sisu AI" width="140" height="35">
             </a>
-            <nav class="nav-links">
-                <a href="#problem">The Problem</a>
-                <a href="#process">Our Process</a>
+            <nav class="nav-links" id="nav-links" aria-label="Primary">
+                <a href="#products">Products</a>
+                <a href="#platform">Platform</a>
                 <a href="#solutions">Solutions</a>
-                <a href="#about">About</a>
-                <a href="#testimonials">Impact</a>
-                <a href="#contact">Contact</a>
+                <a href="#customers">Customers</a>
+                <a href="#company">Company</a>
+                <a href="#contact" class="nav-mobile-cta btn btn-dark">Book a demo</a>
             </nav>
-            <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <i class="ph ph-list"></i>
+            <div class="nav-actions">
+                <a href="#contact" class="nav-link-quiet">Contact</a>
+                <a href="#contact" class="btn btn-dark btn-sm">Book a demo</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="nav-links">
+                <i class="ph ph-list" aria-hidden="true"></i>
             </button>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero section-dark">
-            <div class="glow-orb hero-glow-1"></div>
-            <div class="glow-orb hero-glow-2"></div>
-            <div class="container hero-container">
-                <div class="hero-content fade-in-up">
-                    <span class="badge">AI That Actually Works</span>
-                    <h1 class="hero-title">Transform Your Business Operations with <span
-                            class="text-gradient">Intelligent Automation</span></h1>
-                    <p class="hero-subtitle">Deploy intelligent AI agents and automation systems that streamline
-                        workflows, boost efficiency, and scale your growth - without the technical headaches. From
-                        vision to execution in 6-8 weeks.</p>
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary btn-large">Transform Your Business</a>
-                        <a href="#process" class="btn btn-secondary btn-large">See How It Works <i
-                                class="ph ph-arrow-right"></i></a>
-                    </div>
+    <main id="main">
+        <!-- Hero -->
+        <section class="hero" id="top">
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-mesh"></div>
+                <div class="hero-grid"></div>
+            </div>
+            <div class="container hero-inner">
+                <a href="#products" class="hero-pill reveal">
+                    <span class="hero-pill-tag">Product suite</span>
+                    <span>Four agents, one growth engine</span>
+                    <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                </a>
+                <h1 class="hero-title reveal">AI agents that run your <span class="accent">marketing engine.</span>
+                </h1>
+                <p class="hero-sub reveal">Sisu AI builds production-grade AI agents for marketing, sales and
+                    customer teams. They create on-brand content, find and qualify demand, and answer customers
+                    around the clock. Governed by your rules, live in weeks.</p>
+                <div class="hero-actions reveal">
+                    <a href="#contact" class="btn btn-dark btn-lg">Book a demo</a>
+                    <a href="#products" class="btn btn-ghost btn-lg">Explore the products <i
+                            class="ph ph-arrow-right" aria-hidden="true"></i></a>
                 </div>
-                <div class="hero-visual fade-in-up delay-200">
-                    <div class="glass-card visual-card">
-                        <div class="code-header">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
-                        </div>
-                        <div class="code-body">
-                            <div class="metric-row">
-                                <i class="ph ph-lightning text-gradient"></i>
+                <ul class="hero-proof reveal" aria-label="Highlights">
+                    <li><i class="ph ph-check-circle" aria-hidden="true"></i> Live in 6–8 weeks</li>
+                    <li><i class="ph ph-check-circle" aria-hidden="true"></i> Human approval built in</li>
+                    <li><i class="ph ph-check-circle" aria-hidden="true"></i> Works with any leading model</li>
+                </ul>
+            </div>
+
+            <!-- Product console mockup -->
+            <div class="container console-wrap reveal">
+                <div class="console" role="img"
+                    aria-label="Sisu AI console showing four agents at work and a content draft awaiting approval">
+                    <div class="console-bar">
+                        <span class="console-dots"><i></i><i></i><i></i></span>
+                        <span class="console-url">Sisu Core · Agents</span>
+                        <span class="console-live"><span class="pulse"></span> 4 agents live</span>
+                    </div>
+                    <div class="console-body">
+                        <aside class="console-side">
+                            <div class="console-brand">
+                                <svg viewBox="0 0 60 60" width="22" height="22" aria-hidden="true">
+                                    <path d="M30 8C30 20 20 30 8 30C20 30 30 40 30 52C30 40 40 30 52 30C40 30 30 20 30 8Z"
+                                        fill="url(#cg)" />
+                                    <path d="M46 6C46 10 43 13 39 13C43 13 46 16 46 20C46 16 49 13 53 13C49 13 46 10 46 6Z"
+                                        fill="url(#cg)" opacity=".7" />
+                                </svg>
+                                <span>Sisu Core</span>
+                            </div>
+                            <ul class="console-nav">
+                                <li><i class="ph ph-squares-four" aria-hidden="true"></i> Overview</li>
+                                <li class="active"><i class="ph ph-robot" aria-hidden="true"></i> Agents</li>
+                                <li><i class="ph ph-check-square-offset" aria-hidden="true"></i> Approvals <b>3</b></li>
+                                <li><i class="ph ph-brain" aria-hidden="true"></i> Brand memory</li>
+                                <li><i class="ph ph-plugs-connected" aria-hidden="true"></i> Integrations</li>
+                                <li><i class="ph ph-shield-check" aria-hidden="true"></i> Guardrails</li>
+                            </ul>
+                        </aside>
+                        <div class="console-main">
+                            <div class="console-head">
                                 <div>
-                                    <div class="metric-value">40-70%</div>
-                                    <div class="metric-label">Efficiency Gains</div>
+                                    <span class="console-kicker">Workspace</span>
+                                    <strong>Growth team</strong>
+                                </div>
+                                <span class="console-chip"><i class="ph ph-calendar-blank" aria-hidden="true"></i>
+                                    This week</span>
+                            </div>
+                            <div class="agent-rows">
+                                <div class="agent-row">
+                                    <span class="agent-ico ico-studio"><i class="ph ph-pen-nib" aria-hidden="true"></i></span>
+                                    <div class="agent-info">
+                                        <strong>Studio</strong>
+                                        <span>Drafting 6 LinkedIn posts for the Q4 launch</span>
+                                    </div>
+                                    <span class="status status-wait">Awaiting approval</span>
+                                </div>
+                                <div class="agent-row">
+                                    <span class="agent-ico ico-signal"><i class="ph ph-broadcast" aria-hidden="true"></i></span>
+                                    <div class="agent-info">
+                                        <strong>Signal</strong>
+                                        <span>Competitor pricing page changed overnight</span>
+                                    </div>
+                                    <span class="status status-info">Insight ready</span>
+                                </div>
+                                <div class="agent-row">
+                                    <span class="agent-ico ico-pipeline"><i class="ph ph-funnel" aria-hidden="true"></i></span>
+                                    <div class="agent-info">
+                                        <strong>Pipeline</strong>
+                                        <span>New inbound leads scored and followed up</span>
+                                    </div>
+                                    <span class="status status-run">Running</span>
+                                </div>
+                                <div class="agent-row">
+                                    <span class="agent-ico ico-concierge"><i class="ph ph-chats-circle" aria-hidden="true"></i></span>
+                                    <div class="agent-info">
+                                        <strong>Concierge</strong>
+                                        <span>Answering web chat, Messenger and Zalo</span>
+                                    </div>
+                                    <span class="status status-run">Running</span>
                                 </div>
                             </div>
-                            <div class="metric-row">
-                                <i class="ph ph-clock text-gradient"></i>
-                                <div>
-                                    <div class="metric-value">6-8 Weeks</div>
-                                    <div class="metric-label">To Production</div>
+                        </div>
+                        <div class="console-panel">
+                            <span class="console-kicker">Approval queue</span>
+                            <div class="draft">
+                                <div class="draft-head">
+                                    <span class="draft-ch"><i class="ph ph-linkedin-logo" aria-hidden="true"></i> LinkedIn</span>
+                                    <span class="draft-tag">Draft 2 of 6</span>
+                                </div>
+                                <div class="draft-lines">
+                                    <span style="width: 92%"></span>
+                                    <span style="width: 100%"></span>
+                                    <span style="width: 84%"></span>
+                                    <span style="width: 60%"></span>
+                                </div>
+                                <div class="draft-checks">
+                                    <span><i class="ph ph-check" aria-hidden="true"></i> Brand voice</span>
+                                    <span><i class="ph ph-check" aria-hidden="true"></i> Claims verified</span>
+                                </div>
+                                <div class="draft-actions">
+                                    <span class="d-btn d-btn-ghost">Edit</span>
+                                    <span class="d-btn d-btn-primary">Approve</span>
                                 </div>
                             </div>
-                            <div class="metric-row">
-                                <i class="ph ph-trend-up text-gradient"></i>
-                                <div>
-                                    <div class="metric-value">Scalable</div>
-                                    <div class="metric-label">Growth Capacity</div>
+                            <div class="activity">
+                                <span class="console-kicker">Activity</span>
+                                <ul>
+                                    <li><i class="dot dot-cyan"></i> Weekly market brief sent to #growth</li>
+                                    <li><i class="dot dot-blue"></i> Meeting booked with a qualified lead</li>
+                                    <li><i class="dot dot-amber"></i> Refund question handed to a human</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack strip -->
+        <section class="stack" aria-label="Models and integrations">
+            <div class="container">
+                <p class="stack-label">Built on frontier models. Connected to the stack you already run.</p>
+            </div>
+            <div class="stack-marquee">
+                <div class="stack-track">
+                    <span>OpenAI</span><span>Anthropic Claude</span><span>Google Gemini</span><span>n8n</span>
+                    <span>HubSpot</span><span>Salesforce</span><span>Google Ads</span><span>Meta</span>
+                    <span>LinkedIn</span><span>Shopify</span><span>Zalo</span><span>Slack</span><span>Notion</span>
+                    <span>Google Analytics</span>
+                    <span aria-hidden="true">OpenAI</span><span aria-hidden="true">Anthropic Claude</span>
+                    <span aria-hidden="true">Google Gemini</span><span aria-hidden="true">n8n</span>
+                    <span aria-hidden="true">HubSpot</span><span aria-hidden="true">Salesforce</span>
+                    <span aria-hidden="true">Google Ads</span><span aria-hidden="true">Meta</span>
+                    <span aria-hidden="true">LinkedIn</span><span aria-hidden="true">Shopify</span>
+                    <span aria-hidden="true">Zalo</span><span aria-hidden="true">Slack</span>
+                    <span aria-hidden="true">Notion</span><span aria-hidden="true">Google Analytics</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thesis -->
+        <section class="thesis section" id="why">
+            <div class="container">
+                <span class="eyebrow reveal">Why Sisu</span>
+                <p class="thesis-statement reveal">Marketing teams are asked to publish on every channel,
+                    personalize every touchpoint and prove ROI every week, with the same headcount. More software
+                    adds more tabs. More agencies add more invoices. <span class="thesis-strong">We build the
+                        third option: AI agents that do the work, under your brand and your control.</span></p>
+                <div class="thesis-grid">
+                    <div class="thesis-item reveal">
+                        <span class="thesis-num">01</span>
+                        <h3>Content demand outpaces output</h3>
+                        <p>Every channel wants fresh, on-brand content daily. Writers and designers spend their week
+                            on repetitive production instead of the ideas that move the needle.</p>
+                    </div>
+                    <div class="thesis-item reveal">
+                        <span class="thesis-num">02</span>
+                        <h3>Leads go cold in the inbox</h3>
+                        <p>Buyers often go with whoever responds first. Slow, generic follow-up quietly leaks the
+                            pipeline your marketing budget paid for.</p>
+                    </div>
+                    <div class="thesis-item reveal">
+                        <span class="thesis-num">03</span>
+                        <h3>Customers expect instant answers</h3>
+                        <p>Questions arrive at midnight on Messenger, Zalo and your website. Every unanswered
+                            message is a sale or a review you didn't get.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="products section section-soft" id="products">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">The Sisu product suite</span>
+                    <h2>Four agents. <span class="accent">One growth engine.</span></h2>
+                    <p>Start with the agent that removes your biggest bottleneck, or connect all four into a single
+                        system that learns your brand, your customers and your market.</p>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Studio -->
+                    <article class="product-card reveal" id="studio">
+                        <div class="product-visual pv-studio" aria-hidden="true">
+                            <div class="pv-card pv-brief">
+                                <span class="pv-label">Brief</span>
+                                <span class="pv-text">Q4 product launch, B2B founders</span>
+                            </div>
+                            <div class="pv-arrow"><i class="ph ph-arrow-down"></i></div>
+                            <div class="pv-channels">
+                                <span><i class="ph ph-linkedin-logo"></i> LinkedIn</span>
+                                <span><i class="ph ph-facebook-logo"></i> Facebook</span>
+                                <span><i class="ph ph-article"></i> Blog</span>
+                                <span><i class="ph ph-envelope-simple"></i> Email</span>
+                                <span><i class="ph ph-video-camera"></i> Video script</span>
+                            </div>
+                            <div class="pv-badge"><i class="ph ph-seal-check"></i> On-brand</div>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-meta"><span class="product-num">01</span><span
+                                    class="product-cat">Content</span></div>
+                            <h3>Sisu Studio</h3>
+                            <p class="product-line">Brand-perfect content at the speed of the feed.</p>
+                            <p>Plans, drafts and repurposes content for LinkedIn, Facebook, your blog, email and
+                                video, trained on your brand voice, your products and your best-performing posts.
+                            </p>
+                            <ul class="product-points">
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Brand voice memory built from your
+                                    own work</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> One brief becomes a full
+                                    multichannel campaign</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Approval queue before anything
+                                    goes live</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Signal -->
+                    <article class="product-card reveal" id="signal">
+                        <div class="product-visual pv-signal" aria-hidden="true">
+                            <div class="pv-chart">
+                                <div class="pv-chart-head">
+                                    <span class="pv-label">Share of voice</span>
+                                    <span class="pv-up"><i class="ph ph-trend-up"></i> Rising</span>
+                                </div>
+                                <svg viewBox="0 0 300 90" preserveAspectRatio="none">
+                                    <defs>
+                                        <linearGradient id="sgFill" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0" stop-color="#3B82F6" stop-opacity=".28" />
+                                            <stop offset="1" stop-color="#3B82F6" stop-opacity="0" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M0 70 L30 64 L60 68 L90 52 L120 56 L150 40 L180 44 L210 30 L240 34 L270 18 L300 12 L300 90 L0 90 Z"
+                                        fill="url(#sgFill)" />
+                                    <path d="M0 70 L30 64 L60 68 L90 52 L120 56 L150 40 L180 44 L210 30 L240 34 L270 18 L300 12"
+                                        fill="none" stroke="#3B82F6" stroke-width="2.5" vector-effect="non-scaling-stroke" />
+                                    <path d="M0 78 L30 76 L60 72 L90 74 L120 70 L150 72 L180 66 L210 68 L240 64 L270 66 L300 62"
+                                        fill="none" stroke="#94A3B8" stroke-width="2" stroke-dasharray="4 4"
+                                        vector-effect="non-scaling-stroke" />
+                                </svg>
+                            </div>
+                            <div class="pv-alert">
+                                <i class="ph ph-bell-ringing"></i>
+                                <div><strong>Competitor launched a promo</strong><span>Suggested response ready</span></div>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-meta"><span class="product-num">02</span><span
+                                    class="product-cat">Market intelligence</span></div>
+                            <h3>Sisu Signal</h3>
+                            <p class="product-line">Hear your market before your competitors do.</p>
+                            <p>Watches competitors, social conversations, reviews and your campaign data, then turns
+                                the noise into a weekly brief with clear next moves for your team.</p>
+                            <ul class="product-points">
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Competitor, pricing and
+                                    messaging monitoring</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Social listening and trend
+                                    detection</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Campaign performance briefs with
+                                    recommendations</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Pipeline -->
+                    <article class="product-card reveal" id="pipeline">
+                        <div class="product-visual pv-pipeline" aria-hidden="true">
+                            <div class="pv-leads">
+                                <div class="pv-lead">
+                                    <span class="pv-avatar a1">MT</span>
+                                    <div><strong>Head of Marketing</strong><span>SaaS · 120 staff</span></div>
+                                    <span class="pv-score hot">Hot</span>
+                                </div>
+                                <div class="pv-lead">
+                                    <span class="pv-avatar a2">LA</span>
+                                    <div><strong>Founder</strong><span>E-commerce · 35 staff</span></div>
+                                    <span class="pv-score warm">Warm</span>
+                                </div>
+                                <div class="pv-lead">
+                                    <span class="pv-avatar a3">HN</span>
+                                    <div><strong>COO</strong><span>Education · 300 staff</span></div>
+                                    <span class="pv-score booked"><i class="ph ph-calendar-check"></i> Booked</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="product-body">
+                            <div class="product-meta"><span class="product-num">03</span><span
+                                    class="product-cat">Lead generation</span></div>
+                            <h3>Sisu Pipeline</h3>
+                            <p class="product-line">Every lead answered in minutes, qualified by morning.</p>
+                            <p>Captures, enriches and scores every inbound lead, writes personalized follow-ups and
+                                books qualified meetings straight into your sales team's calendar.</p>
+                            <ul class="product-points">
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Lead enrichment and scoring</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Personalized, multi-step
+                                    follow-up</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Two-way sync with HubSpot,
+                                    Salesforce and more</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- Concierge -->
+                    <article class="product-card reveal" id="concierge">
+                        <div class="product-visual pv-concierge" aria-hidden="true">
+                            <div class="pv-chat">
+                                <div class="bubble bubble-user">Do you deliver to Da Nang this week?</div>
+                                <div class="bubble bubble-agent">Yes. Orders placed before 3 pm ship today and arrive
+                                    in 2 to 3 days. Want me to check stock for you?</div>
+                                <div class="pv-handoff"><i class="ph ph-user-switch"></i> Human handoff ready</div>
+                            </div>
+                        </div>
+                        <div class="product-body">
+                            <div class="product-meta"><span class="product-num">04</span><span
+                                    class="product-cat">Customer conversations</span></div>
+                            <h3>Sisu Concierge</h3>
+                            <p class="product-line">Accurate answers on every channel, day and night.</p>
+                            <p>Resolves common questions on your website, Messenger and Zalo using your own
+                                knowledge base, and hands complex cases to your team with the full context attached.
+                            </p>
+                            <ul class="product-points">
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Grounded in your docs, products and
+                                    policies</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Smart escalation to humans</li>
+                                <li><i class="ph ph-check" aria-hidden="true"></i> Fluent in Vietnamese, English and
+                                    more</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="custom-build reveal">
+                    <div class="custom-build-icon"><i class="ph ph-cube-transparent" aria-hidden="true"></i></div>
+                    <div>
+                        <h3>Need something the suite doesn't cover?</h3>
+                        <p>Our team builds custom agents and AI apps on the same platform, for any workflow in
+                            marketing, sales, operations or service.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-ghost">Talk to our team <i class="ph ph-arrow-right"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Platform -->
+        <section class="platform section section-dark" id="platform">
+            <div class="platform-glow" aria-hidden="true"></div>
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow eyebrow-dark">Sisu Core platform</span>
+                    <h2>One governed brain <span class="accent">under every agent.</span></h2>
+                    <p>Every Sisu agent runs on Sisu Core, the shared layer that holds your brand knowledge,
+                        enforces your rules and connects to your systems. Add a new agent and it already knows your
+                        business.</p>
+                </div>
+
+                <div class="arch reveal" aria-label="Sisu Core architecture: your data flows into Sisu Core, which powers four agents that work across your channels">
+                    <div class="arch-col">
+                        <span class="arch-title">Your data &amp; tools</span>
+                        <span class="arch-node"><i class="ph ph-address-book" aria-hidden="true"></i> CRM</span>
+                        <span class="arch-node"><i class="ph ph-globe" aria-hidden="true"></i> Website &amp; docs</span>
+                        <span class="arch-node"><i class="ph ph-chart-line-up" aria-hidden="true"></i> Ads &amp; analytics</span>
+                        <span class="arch-node"><i class="ph ph-shopping-bag" aria-hidden="true"></i> Products &amp; orders</span>
+                    </div>
+                    <div class="arch-link" aria-hidden="true"><span></span></div>
+                    <div class="arch-core">
+                        <div class="arch-core-head">
+                            <svg viewBox="0 0 60 60" width="28" height="28" aria-hidden="true">
+                                <path d="M30 8C30 20 20 30 8 30C20 30 30 40 30 52C30 40 40 30 52 30C40 30 30 20 30 8Z"
+                                    fill="url(#cg)" />
+                            </svg>
+                            <strong>Sisu Core</strong>
+                        </div>
+                        <div class="arch-core-grid">
+                            <span>Brand memory</span>
+                            <span>Guardrails</span>
+                            <span>Orchestration</span>
+                            <span>Observability</span>
+                        </div>
+                    </div>
+                    <div class="arch-link" aria-hidden="true"><span></span></div>
+                    <div class="arch-col">
+                        <span class="arch-title">Agents</span>
+                        <span class="arch-node arch-agent"><i class="ph ph-pen-nib" aria-hidden="true"></i> Studio</span>
+                        <span class="arch-node arch-agent"><i class="ph ph-broadcast" aria-hidden="true"></i> Signal</span>
+                        <span class="arch-node arch-agent"><i class="ph ph-funnel" aria-hidden="true"></i> Pipeline</span>
+                        <span class="arch-node arch-agent"><i class="ph ph-chats-circle" aria-hidden="true"></i> Concierge</span>
+                    </div>
+                </div>
+
+                <div class="feature-grid">
+                    <div class="feature reveal">
+                        <i class="ph ph-brain" aria-hidden="true"></i>
+                        <h3>Brand memory</h3>
+                        <p>Your voice, products, pricing and past campaigns in one living knowledge base that every
+                            agent draws on.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <i class="ph ph-check-square-offset" aria-hidden="true"></i>
+                        <h3>Human in the loop</h3>
+                        <p>Set what agents can do alone and what needs sign-off. Nothing sensitive ships without
+                            your approval.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <i class="ph ph-shuffle" aria-hidden="true"></i>
+                        <h3>Model-agnostic</h3>
+                        <p>Each task is routed to the best model for the job across OpenAI, Anthropic and Google,
+                            so you are never locked in.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <i class="ph ph-plugs-connected" aria-hidden="true"></i>
+                        <h3>Connected to your stack</h3>
+                        <p>Native connections to your CRM, ad platforms, messaging channels and workspace tools. No
+                            rip-and-replace.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <i class="ph ph-list-magnifying-glass" aria-hidden="true"></i>
+                        <h3>Full audit trail</h3>
+                        <p>Every action, source and decision is logged, so you can see exactly what an agent did
+                            and why.</p>
+                    </div>
+                    <div class="feature reveal">
+                        <i class="ph ph-lock-key" aria-hidden="true"></i>
+                        <h3>Your data stays yours</h3>
+                        <p>Agents run on your accounts with scoped, role-based access. Your data is never shared
+                            across customers.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Problem Section -->
-        <section id="problem" class="problem section-light">
+        <!-- Deployment -->
+        <section class="deploy section" id="approach">
             <div class="container">
-                <div class="section-header text-center fade-in-up">
-                    <h2 class="section-title">Stop Losing Time and Money to <span class="text-gradient">Manual
-                            Processes</span></h2>
-                    <p class="section-subtitle">Your competitors are already using AI to work faster, serve customers
-                        better, and scale efficiently. Meanwhile, your team is drowning in repetitive tasks that drain
-                        resources and slow growth.</p>
+                <div class="section-head section-head-split reveal">
+                    <div>
+                        <span class="eyebrow">Deployment</span>
+                        <h2>From kickoff to production in <span class="accent">weeks, not quarters.</span></h2>
+                    </div>
+                    <p>Our deployment team configures, integrates and tunes your agents alongside you. You get a
+                        working system with measurable KPIs, without hiring an in-house AI team.</p>
                 </div>
-
-                <div class="reality-grid">
-                    <div class="reality-card fade-in-up">
-                        <div class="card-icon warning"><i class="ph ph-users-three"></i></div>
-                        <h3>Customer Service Pileups</h3>
-                        <p>Customer inquiries pile up while your team struggles to respond quickly.</p>
-                    </div>
-                    <div class="reality-card fade-in-up delay-100">
-                        <div class="card-icon warning"><i class="ph ph-money"></i></div>
-                        <h3>Lost Prospects</h3>
-                        <p>Sales prospects slip away due to slow follow-ups and generic outreach.</p>
-                    </div>
-                    <div class="reality-card fade-in-up delay-200">
-                        <div class="card-icon warning"><i class="ph ph-megaphone"></i></div>
-                        <h3>Marketing Inefficiency</h3>
-                        <p>Marketing campaigns demand constant manual effort with inconsistent results.</p>
-                    </div>
-                    <div class="reality-card fade-in-up delay-300">
-                        <div class="card-icon warning"><i class="ph ph-archive"></i></div>
-                        <h3>Back-Office Drain</h3>
-                        <p>Back-office operations consume hours that could be spent on strategy.</p>
-                    </div>
-                </div>
-
-                <div class="better-way text-center fade-in-up">
-                    <h3>There's a better way.</h3>
-                    <p>Sisu AI embeds intelligent automation into every layer of your business - turning operational
-                        chaos into competitive advantage.</p>
-                </div>
+                <ol class="steps">
+                    <li class="step reveal">
+                        <div class="step-top"><span class="step-num">01</span><span class="step-time">Weeks
+                                1–2</span></div>
+                        <h3>Discover</h3>
+                        <p>We map your workflows, data and channels, then pick the starting point with the highest
+                            return and agree on the KPIs that define success.</p>
+                    </li>
+                    <li class="step reveal">
+                        <div class="step-top"><span class="step-num">02</span><span class="step-time">Weeks
+                                3–8</span></div>
+                        <h3>Deploy</h3>
+                        <p>Agents are configured on Sisu Core, trained on your brand and connected to your stack.
+                            A production pilot goes live with real customers and real numbers.</p>
+                    </li>
+                    <li class="step reveal">
+                        <div class="step-top"><span class="step-num">03</span><span
+                                class="step-time">Ongoing</span></div>
+                        <h3>Scale</h3>
+                        <p>We add agents and channels, tune performance every month and train your team, so the
+                            system keeps getting better as your business grows.</p>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- Process Section -->
-        <section id="process" class="process section-white">
+        <!-- Solutions by team -->
+        <section class="solutions section section-soft" id="solutions">
             <div class="container">
-                <div class="section-header fade-in-up">
-                    <h2 class="section-title">Your Path to <span class="text-gradient">AI Transformation</span></h2>
-                    <p class="section-subtitle">We handle the entire build from design to go-live in 6 to 8 weeks, with
-                        no technical team required on your side.</p>
+                <div class="section-head reveal">
+                    <span class="eyebrow">Solutions</span>
+                    <h2>Built for the teams <span class="accent">that drive growth.</span></h2>
+                    <p>Marketing is where most customers start. Sisu agents then carry the same brand knowledge
+                        through sales, service and operations.</p>
                 </div>
 
-                <div class="timeline">
-                    <div class="timeline-item fade-in-up">
-                        <div class="timeline-marker">1</div>
-                        <div class="timeline-content">
-                            <h3>Discovery & Assessment</h3>
-                            <p class="duration"><i class="ph ph-hourglass-high"></i> Duration: 1-2 weeks</p>
-                            <p>We analyze your current operations, identify high-impact automation opportunities, and
-                                assess your AI readiness. We pinpoint exactly where AI will drive the most ROI.</p>
-                        </div>
+                <div class="tabs reveal">
+                    <div class="tab-list" role="tablist" aria-label="Solutions by team">
+                        <button class="tab" role="tab" id="tab-marketing" aria-controls="panel-marketing"
+                            aria-selected="true"><i class="ph ph-megaphone-simple" aria-hidden="true"></i>
+                            Marketing</button>
+                        <button class="tab" role="tab" id="tab-sales" aria-controls="panel-sales"
+                            aria-selected="false" tabindex="-1"><i class="ph ph-handshake" aria-hidden="true"></i>
+                            Sales</button>
+                        <button class="tab" role="tab" id="tab-cx" aria-controls="panel-cx" aria-selected="false"
+                            tabindex="-1"><i class="ph ph-headset" aria-hidden="true"></i> Customer
+                            experience</button>
+                        <button class="tab" role="tab" id="tab-ops" aria-controls="panel-ops" aria-selected="false"
+                            tabindex="-1"><i class="ph ph-gauge" aria-hidden="true"></i> Leadership &amp;
+                            ops</button>
                     </div>
-                    <div class="timeline-item fade-in-up delay-100">
-                        <div class="timeline-marker gradient-marker">2</div>
-                        <div class="timeline-content">
-                            <h3>Rapid Pilot Implementation</h3>
-                            <p class="duration"><i class="ph ph-rocket-launch"></i> Duration: 6-8 weeks</p>
-                            <p>We co-create and deploy your first production-ready AI solution. This isn't a theory -
-                                it's a working system integrated into your operations to prove value quickly and build
-                                momentum.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item fade-in-up delay-200">
-                        <div class="timeline-marker">3</div>
-                        <div class="timeline-content">
-                            <h3>Scale & Optimize</h3>
-                            <p class="duration"><i class="ph ph-infinity"></i> Duration: Ongoing partnership</p>
-                            <p>We expand AI across operations with ongoing support, training, and optimization. We don't
-                                just implement technology and leave; we ensure long-term, scalable success.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Solutions Section -->
-        <section id="solutions" class="solutions section-light">
-            <div class="container">
-                <div class="section-header text-center fade-in-up">
-                    <h2 class="section-title">Intelligent <span class="text-gradient">AI Agents & Automation</span></h2>
-                    <p class="section-subtitle">Systems designed to liberate your team from tedious operations.</p>
-                </div>
-
-                <div class="solutions-grid">
-                    <div class="solution-card fade-in-up">
-                        <div class="solution-icon"><i class="ph ph-megaphone-simple"></i></div>
-                        <h3>Marketing AI Agent</h3>
-                        <p>Automate content creation, campaign management, and personalized outreach at scale without
-                            sacrificing quality.</p>
+                    <div class="tab-panel" role="tabpanel" id="panel-marketing" aria-labelledby="tab-marketing">
+                        <div class="usecase"><h3>Always-on content engine</h3><p>A steady stream of on-brand posts,
+                                articles and newsletters, drafted daily and approved in minutes.</p><span
+                                class="usecase-tag">Studio</span></div>
+                        <div class="usecase"><h3>SEO and blog production</h3><p>Keyword research, briefs and
+                                long-form drafts that match your expertise and tone.</p><span
+                                class="usecase-tag">Studio</span></div>
+                        <div class="usecase"><h3>Competitor and trend watch</h3><p>Know when a rival changes
+                                pricing, launches a campaign or starts trending.</p><span
+                                class="usecase-tag">Signal</span></div>
+                        <div class="usecase"><h3>Campaign reporting</h3><p>Weekly performance briefs across ad
+                                platforms and analytics, with recommendations attached.</p><span
+                                class="usecase-tag">Signal</span></div>
                     </div>
-                    <div class="solution-card fade-in-up delay-100">
-                        <div class="solution-icon"><i class="ph ph-handshake"></i></div>
-                        <h3>Sales AI Agent</h3>
-                        <p>Qualify leads 24/7, automate follow-ups, and ensure your sales team only spends time with
-                            prospect-ready buyers.</p>
+                    <div class="tab-panel" role="tabpanel" id="panel-sales" aria-labelledby="tab-sales" hidden>
+                        <div class="usecase"><h3>Instant inbound response</h3><p>Every form fill and inquiry gets a
+                                personal reply within minutes, at any hour.</p><span class="usecase-tag">Pipeline</span>
+                        </div>
+                        <div class="usecase"><h3>Lead enrichment and scoring</h3><p>Company, role and intent data
+                                added automatically, so reps call the right people first.</p><span
+                                class="usecase-tag">Pipeline</span></div>
+                        <div class="usecase"><h3>Personalized outreach</h3><p>Multi-step sequences written for each
+                                prospect, not mail-merged from a template.</p><span
+                                class="usecase-tag">Pipeline</span></div>
+                        <div class="usecase"><h3>Meeting prep briefs</h3><p>A one-page brief on every prospect,
+                                delivered before the call starts.</p><span class="usecase-tag">Signal</span></div>
                     </div>
-                    <div class="solution-card fade-in-up delay-200">
-                        <div class="solution-icon"><i class="ph ph-headset"></i></div>
-                        <h3>Customer Support AI Agent</h3>
-                        <p>Resolve common tickets instantly, route complex issues intelligently, and slash response
-                            times while improving satisfaction.</p>
+                    <div class="tab-panel" role="tabpanel" id="panel-cx" aria-labelledby="tab-cx" hidden>
+                        <div class="usecase"><h3>24/7 multichannel support</h3><p>Consistent answers across web
+                                chat, Messenger and Zalo, in your customers' language.</p><span
+                                class="usecase-tag">Concierge</span></div>
+                        <div class="usecase"><h3>Order and booking status</h3><p>Customers check orders,
+                                appointments and availability without waiting for a human.</p><span
+                                class="usecase-tag">Concierge</span></div>
+                        <div class="usecase"><h3>Review responses</h3><p>Timely, on-brand replies to reviews, with
+                                negative ones flagged for your team.</p><span class="usecase-tag">Studio</span></div>
+                        <div class="usecase"><h3>Voice of the customer</h3><p>Themes from every conversation
+                                summarized into insights product and marketing can act on.</p><span
+                                class="usecase-tag">Signal</span></div>
                     </div>
-                    <div class="solution-card fade-in-up delay-300">
-                        <div class="solution-icon"><i class="ph ph-arrows-merge"></i></div>
-                        <h3>Workflow Automation</h3>
-                        <p>Connect disparate tools and eliminate manual data entry. Let systems talk to each other so
-                            your people don't have to copy-paste.</p>
-                    </div>
-                    <div class="solution-card fade-in-up delay-400">
-                        <div class="solution-icon"><i class="ph ph-compass"></i></div>
-                        <h3>AI Strategy & Roadmap</h3>
-                        <p>Get a clear, actionable blueprint for integrating AI across your organization, tailored to
-                            your specific business goals.</p>
+                    <div class="tab-panel" role="tabpanel" id="panel-ops" aria-labelledby="tab-ops" hidden>
+                        <div class="usecase"><h3>Executive digests</h3><p>One weekly summary of pipeline, campaigns
+                                and customer sentiment, ready on Monday morning.</p><span
+                                class="usecase-tag">Signal</span></div>
+                        <div class="usecase"><h3>Report automation</h3><p>Data pulled, cleaned and formatted into
+                                the reports your team used to build by hand.</p><span
+                                class="usecase-tag">Sisu Core</span></div>
+                        <div class="usecase"><h3>Internal knowledge assistant</h3><p>Staff get instant answers from
+                                your policies, playbooks and docs.</p><span class="usecase-tag">Concierge</span></div>
+                        <div class="usecase"><h3>Cross-tool workflows</h3><p>Systems that pass data to each other
+                                automatically, so nobody copies and pastes between tabs.</p><span
+                                class="usecase-tag">Sisu Core</span></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Founder Section -->
-        <section id="about" class="founder section-white">
+        <!-- Customers -->
+        <section class="customers section" id="customers">
             <div class="container">
-                <div class="founder-layout fade-in-up">
-                    <div class="founder-photo-wrap">
-                        <img src="images/Daniel_Duc_profile_picture_portrait.jpeg" alt="Daniel Nguyen - Founder of Sisu AI" class="founder-photo">
-                    </div>
-                    <div class="founder-bio">
-                        <span class="badge">Meet the Founder</span>
-                        <h2 class="founder-name">Daniel Nguyen</h2>
-                        <p class="founder-tagline">Bridging the gap between cutting-edge AI and real business outcomes for SMEs.</p>
-                        <ul class="founder-credentials">
-                            <li>
-                                <i class="ph ph-lightning"></i>
-                                <span>Founder of <strong>Sisu AI</strong> (formerly AI Automation Pro) - AI Agents &amp; Automation Solutions for SMEs</span>
-                            </li>
-                            <li>
-                                <i class="ph ph-users-three"></i>
-                                <span>Founder of <a href="https://www.facebook.com/aitransformers" target="_blank" rel="noopener noreferrer"><strong>AI Transformers Vietnam</strong></a> - Community for AI builders, tech founders, indie hackers, developers, and AI practitioners</span>
-                            </li>
-                            <li>
-                                <i class="ph ph-rocket-launch"></i>
-                                <span>Founder of <strong>AI Native Lab</strong> - an AI community for non-tech founders, content creators, and anyone looking to learn and apply AI to real business growth and work</span>
-                            </li>
-                            <li>
-                                <i class="ph ph-briefcase"></i>
-                                <span><strong>10+ years</strong> of Digital Transformation &amp; Workflow Automation experience at high-tech, deep-tech companies in Europe</span>
-                            </li>
-                            <li>
-                                <i class="ph ph-graduation-cap"></i>
-                                <span>Master's in Data Analytics - <strong>Aalto University</strong>, a top university in Finland and Europe</span>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="section-head reveal">
+                    <span class="eyebrow">Customers</span>
+                    <h2>Trusted by teams <span class="accent">who ship.</span></h2>
+                    <p>From bio-informatics to recruitment technology, teams use Sisu to get results in weeks.</p>
+                </div>
+                <div class="quote-grid">
+                    <figure class="quote quote-feature reveal">
+                        <i class="ph-fill ph-quotes quote-mark" aria-hidden="true"></i>
+                        <blockquote>Sisu AI transformed how we handle customer inquiries. Response times dropped by
+                            70% and our team can finally focus on complex cases that need human expertise. The ROI
+                            was clear within the first month.</blockquote>
+                        <figcaption><strong>Director of Operations</strong><span>Bio-Informatics
+                                Company</span></figcaption>
+                    </figure>
+                    <figure class="quote reveal">
+                        <blockquote>The 6–8 week pilot delivered exactly what they promised: a production-ready
+                            system we scaled immediately.</blockquote>
+                        <figcaption><strong>Marketing Director</strong><span>Digital Agency</span></figcaption>
+                    </figure>
+                    <figure class="quote reveal">
+                        <blockquote>They didn't just implement technology and leave. They trained our team,
+                            optimized continuously, and became a true innovation partner.</blockquote>
+                        <figcaption><strong>CTO</strong><span>Recruitment Technology Company</span></figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
 
-        <!-- Speaking Gallery Section -->
-        <section id="speaking" class="speaking section-light">
-            <div class="container">
-                <div class="section-header text-center fade-in-up">
-                    <h2 class="section-title">Daniel as an <span class="text-gradient">AI Speaker</span></h2>
-                    <p class="section-subtitle">Sharing insights on AI transformation at conferences, workshops, and community events across Vietnam, Finland, and Europe.</p>
+        <!-- Company -->
+        <section class="company section section-soft" id="company">
+            <div class="container company-inner">
+                <div class="company-copy reveal">
+                    <span class="eyebrow">Company</span>
+                    <h2>Built with <span class="accent">sisu.</span></h2>
+                    <p class="company-lead"><em>Sisu</em> is a Finnish word for extraordinary determination: the
+                        grit to keep going when the work gets hard. Reliable AI takes exactly that, so we named the
+                        company after it.</p>
+                    <p>Sisu AI is an applied AI company headquartered in Hanoi, with roots in the Nordic tech
+                        ecosystem. Our team brings together AI engineering, growth marketing and product design.
+                        Our in-house AI Lab tests new models and tools the week they ship and turns the ones that
+                        work into features for our customers.</p>
                 </div>
-                <!-- Row 1: scrolls left -->
-                <div class="gallery-marquee fade-in-up">
-                    <div class="marquee-track marquee-left">
-                        <div class="marquee-item"><img src="images/DSC01262_Resized.jpg" alt="Daniel Nguyen speaking at AI event"></div>
-                        <div class="marquee-item"><img src="images/DSC01433_Resized.jpg" alt="Daniel Nguyen presenting at conference"></div>
-                        <div class="marquee-item"><img src="images/DSC01438_Resized.jpg" alt="Daniel Nguyen on stage"></div>
-                        <div class="marquee-item"><img src="images/DSC01509_Resized.jpg" alt="Daniel Nguyen AI workshop"></div>
-                        <div class="marquee-item"><img src="images/DSC07621_Large.jpeg" alt="Daniel Nguyen AI speaker talk"></div>
-                        <div class="marquee-item"><img src="images/DSC07662_Resized.JPG" alt="Daniel Nguyen speaking at event"></div>
-                        <div class="marquee-item"><img src="images/DSC07671_Resized.JPG" alt="Daniel Nguyen community event"></div>
-                        <div class="marquee-item"><img src="images/IMG_0628_Resized.jpg" alt="Daniel Nguyen speaking engagement"></div>
-                        <div class="marquee-item"><img src="images/IMG_0634_Resized.jpg" alt="Daniel Nguyen presenting AI insights"></div>
-                        <div class="marquee-item"><img src="images/IMG_0757_Resized.jpg" alt="Daniel Nguyen keynote speaker"></div>
-                        <!-- Duplicate for seamless loop -->
-                        <div class="marquee-item"><img src="images/DSC01262_Resized.jpg" alt="Daniel Nguyen speaking at AI event"></div>
-                        <div class="marquee-item"><img src="images/DSC01433_Resized.jpg" alt="Daniel Nguyen presenting at conference"></div>
-                        <div class="marquee-item"><img src="images/DSC01438_Resized.jpg" alt="Daniel Nguyen on stage"></div>
-                        <div class="marquee-item"><img src="images/DSC01509_Resized.jpg" alt="Daniel Nguyen AI workshop"></div>
-                        <div class="marquee-item"><img src="images/DSC07621_Large.jpeg" alt="Daniel Nguyen AI speaker talk"></div>
-                        <div class="marquee-item"><img src="images/DSC07662_Resized.JPG" alt="Daniel Nguyen speaking at event"></div>
-                        <div class="marquee-item"><img src="images/DSC07671_Resized.JPG" alt="Daniel Nguyen community event"></div>
-                        <div class="marquee-item"><img src="images/IMG_0628_Resized.jpg" alt="Daniel Nguyen speaking engagement"></div>
-                        <div class="marquee-item"><img src="images/IMG_0634_Resized.jpg" alt="Daniel Nguyen presenting AI insights"></div>
-                        <div class="marquee-item"><img src="images/IMG_0757_Resized.jpg" alt="Daniel Nguyen keynote speaker"></div>
+                <div class="company-cards">
+                    <div class="company-card reveal">
+                        <i class="ph ph-snowflake" aria-hidden="true"></i>
+                        <h3>Nordic roots</h3>
+                        <p>Shaped by more than a decade in Europe's deep-tech and growth scene. Precise, pragmatic,
+                            and allergic to hype.</p>
                     </div>
-                </div>
-                <!-- Row 2: scrolls right -->
-                <div class="gallery-marquee fade-in-up delay-100">
-                    <div class="marquee-track marquee-right">
-                        <div class="marquee-item"><img src="images/585890855_4393590117528837_4156798799036662290_n.jpg" alt="Daniel Nguyen at community event"></div>
-                        <div class="marquee-item"><img src="images/Yle-tv-Aurora-Digital.jpeg" alt="Daniel Nguyen on Yle TV Aurora Digital"></div>
-                        <div class="marquee-item"><img src="images/daniel_nguyen_linkedin_personal_branding_growth_hacking_workshop_2.jpg" alt="LinkedIn personal branding workshop"></div>
-                        <div class="marquee-item"><img src="images/digital_marketing_panel_guest_talk_agrowthhacker_1.jpg" alt="Digital marketing panel guest talk"></div>
-                        <div class="marquee-item"><img src="images/global_business_forum_finland_2019_panel_discussion_daniel_nguyen_growth_hacking.jpg" alt="Global Business Forum Finland 2019"></div>
-                        <div class="marquee-item"><img src="images/guest_speak_linkedin_marketing_agrowthhacker_3-1-e1559061037410.jpg" alt="Guest speaker LinkedIn marketing"></div>
-                        <div class="marquee-item"><img src="images/nordic_asean_business_conference_agrowthhacker.jpeg" alt="Nordic ASEAN Business Conference"></div>
-                        <div class="marquee-item"><img src="images/received_2248267325433459.jpeg" alt="Daniel Nguyen speaking engagement"></div>
-                        <div class="marquee-item"><img src="images/success_club_7_vietes_vietnamese_entrepreneurship_society_in_finland_2.jpg" alt="Success Club Vietnamese Entrepreneurship Society Finland"></div>
-                        <div class="marquee-item"><img src="images/vietes_vietnamese_entrepreneurship_society_in_finland_startup_idea_contest_final_2.jpg" alt="Startup idea contest Finland"></div>
-                        <!-- Duplicate for seamless loop -->
-                        <div class="marquee-item"><img src="images/585890855_4393590117528837_4156798799036662290_n.jpg" alt="Daniel Nguyen at community event"></div>
-                        <div class="marquee-item"><img src="images/Yle-tv-Aurora-Digital.jpeg" alt="Daniel Nguyen on Yle TV Aurora Digital"></div>
-                        <div class="marquee-item"><img src="images/daniel_nguyen_linkedin_personal_branding_growth_hacking_workshop_2.jpg" alt="LinkedIn personal branding workshop"></div>
-                        <div class="marquee-item"><img src="images/digital_marketing_panel_guest_talk_agrowthhacker_1.jpg" alt="Digital marketing panel guest talk"></div>
-                        <div class="marquee-item"><img src="images/global_business_forum_finland_2019_panel_discussion_daniel_nguyen_growth_hacking.jpg" alt="Global Business Forum Finland 2019"></div>
-                        <div class="marquee-item"><img src="images/guest_speak_linkedin_marketing_agrowthhacker_3-1-e1559061037410.jpg" alt="Guest speaker LinkedIn marketing"></div>
-                        <div class="marquee-item"><img src="images/nordic_asean_business_conference_agrowthhacker.jpeg" alt="Nordic ASEAN Business Conference"></div>
-                        <div class="marquee-item"><img src="images/received_2248267325433459.jpeg" alt="Daniel Nguyen speaking engagement"></div>
-                        <div class="marquee-item"><img src="images/success_club_7_vietes_vietnamese_entrepreneurship_society_in_finland_2.jpg" alt="Success Club Vietnamese Entrepreneurship Society Finland"></div>
-                        <div class="marquee-item"><img src="images/vietes_vietnamese_entrepreneurship_society_in_finland_startup_idea_contest_final_2.jpg" alt="Startup idea contest Finland"></div>
+                    <div class="company-card reveal">
+                        <i class="ph ph-flask" aria-hidden="true"></i>
+                        <h3>Sisu AI Lab</h3>
+                        <p>Our R&amp;D team prototypes with the newest models every week and ships what holds up in
+                            production.</p>
                     </div>
+                    <div class="company-card reveal">
+                        <i class="ph ph-map-pin" aria-hidden="true"></i>
+                        <h3>Hanoi headquarters</h3>
+                        <p>Engineering, deployment and support from Vietnam, close to the teams and markets we
+                            serve.</p>
+                    </div>
+                    <a class="company-card company-card-link reveal"
+                        href="mailto:info@sisuai.net?subject=Careers%20at%20Sisu%20AI">
+                        <i class="ph ph-users-three" aria-hidden="true"></i>
+                        <h3>We're hiring <i class="ph ph-arrow-up-right" aria-hidden="true"></i></h3>
+                        <p>We're growing our research, growth and community teams in Hanoi. Come build with us.</p>
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials/Impact Section -->
-        <section id="testimonials" class="testimonials section-dark">
-            <div class="glow-orb impact-glow"></div>
-            <div class="container">
-                <div class="section-header text-center fade-in-up">
-                    <h2 class="section-title">Trusted by <span class="text-gradient">Forward-Thinking Businesses</span>
-                    </h2>
-                    <p class="section-subtitle text-white">Real impact in weeks, not years.</p>
-                </div>
-
-                <div class="impact-stats fade-in-up">
-                    <div class="stat-item">
-                        <div class="stat-number text-gradient">Faster</div>
-                        <div class="stat-desc">Response times across all touchpoints</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number text-gradient">Weeks</div>
-                        <div class="stat-desc">To deploy production-ready solutions</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number text-gradient">24/7</div>
-                        <div class="stat-desc">Availability without expanding headcount</div>
-                    </div>
-                </div>
-
-                <div class="testimonial-grid">
-                    <div class="testimonial-card glass-card fade-in-up delay-100">
-                        <p class="quote">"Sisu AI transformed how we handle customer inquiries. Response times dropped
-                            by 70% and our team can finally focus on complex cases that need human expertise. The ROI
-                            was clear within the first month."</p>
-                        <div class="author">
-                            <div class="author-info">
-                                <strong>Director of Operations</strong>
-                                <span>Bio-Informatics Company</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card glass-card fade-in-up delay-200">
-                        <p class="quote">"The 6-8 week pilot delivered exactly what they promised - a production-ready
-                            system we scaled immediately."</p>
-                        <div class="author">
-                            <div class="author-info">
-                                <strong>Marketing Director</strong>
-                                <span>Digital Agency</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card glass-card fade-in-up delay-300">
-                        <p class="quote">"They didn't just implement technology and leave - they trained our team,
-                            optimized continuously, and became a true innovation partner."</p>
-                        <div class="author">
-                            <div class="author-info">
-                                <strong>CTO</strong>
-                                <span>Recruitment Technology Company</span>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Final CTA -->
+        <section class="final-cta">
+            <div class="final-cta-glow" aria-hidden="true"></div>
+            <div class="container final-cta-inner reveal">
+                <h2>Give your team an AI workforce.</h2>
+                <p>Production-grade agents for marketing, sales and customer teams. Live in weeks, governed by
+                    you.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-light btn-lg">Book a demo</a>
+                    <a href="#products" class="btn btn-ghost-dark btn-lg">Explore the products</a>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact section-white">
-            <div class="container">
-                <div class="section-header text-center fade-in-up">
-                    <h2 class="section-title">Let's <span class="text-gradient">Transform Your Business</span></h2>
-                    <p class="section-subtitle">Tell us about your business and goals. We'll get back to you within 1-2 business days.</p>
+        <!-- Contact / Demo -->
+        <section class="contact section" id="contact">
+            <div class="container contact-inner">
+                <div class="contact-copy reveal">
+                    <span class="eyebrow">Book a demo</span>
+                    <h2>See Sisu <span class="accent">in action.</span></h2>
+                    <p>Tell us where your team loses the most time. We'll show you the agent that gives it back.
+                    </p>
+                    <ul class="contact-list">
+                        <li><i class="ph ph-presentation-chart" aria-hidden="true"></i>
+                            <div><strong>A walkthrough tailored to your team</strong><span>See the agents working on
+                                    use cases like yours.</span></div>
+                        </li>
+                        <li><i class="ph ph-target" aria-hidden="true"></i>
+                            <div><strong>Your highest-ROI starting point</strong><span>A short list of where AI will
+                                    pay back first.</span></div>
+                        </li>
+                        <li><i class="ph ph-file-text" aria-hidden="true"></i>
+                            <div><strong>Clear scope, timeline and pricing</strong><span>No vague strategy decks.
+                                    Just a concrete plan.</span></div>
+                        </li>
+                    </ul>
+                    <div class="contact-direct">
+                        <span>Prefer email?</span>
+                        <a href="mailto:info@sisuai.net">info@sisuai.net</a>
+                    </div>
                 </div>
 
-                <div class="contact-layout fade-in-up">
-                    <div class="contact-info">
-                        <div class="contact-info-item">
-                            <div class="contact-icon"><i class="ph ph-envelope-simple"></i></div>
-                            <div>
-                                <strong>Email Us</strong>
-                                <span>info@sisuai.net</span>
-                            </div>
+                <form id="contact-form" class="form reveal" novalidate>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="contact-name">Full name <span class="req">*</span></label>
+                            <input type="text" id="contact-name" name="name" placeholder="Jane Nguyen" required
+                                autocomplete="name">
+                            <span class="field-error" id="error-name"></span>
                         </div>
-                        <div class="contact-info-item">
-                            <div class="contact-icon"><i class="ph ph-clock"></i></div>
-                            <div>
-                                <strong>Response Time</strong>
-                                <span>1-2 business days</span>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-icon"><i class="ph ph-rocket-launch"></i></div>
-                            <div>
-                                <strong>Pilot Timeline</strong>
-                                <span>6-8 weeks to production</span>
-                            </div>
+                        <div class="field">
+                            <label for="contact-email">Work email <span class="req">*</span></label>
+                            <input type="email" id="contact-email" name="email" placeholder="jane@company.com"
+                                required autocomplete="email">
+                            <span class="field-error" id="error-email"></span>
                         </div>
                     </div>
-
-                    <form id="contact-form" class="contact-form" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-name">Full Name <span class="required">*</span></label>
-                                <input type="text" id="contact-name" name="name" placeholder="Jane Smith" required autocomplete="name">
-                                <span class="field-error" id="error-name"></span>
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email">Email Address <span class="required">*</span></label>
-                                <input type="email" id="contact-email" name="email" placeholder="jane@company.com" required autocomplete="email">
-                                <span class="field-error" id="error-email"></span>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="contact-company">Company</label>
+                            <input type="text" id="contact-company" name="company" placeholder="Company name"
+                                autocomplete="organization">
+                        </div>
+                        <div class="field">
+                            <label for="contact-website">Company website</label>
+                            <input type="url" id="contact-website" name="website" placeholder="https://company.com"
+                                autocomplete="url">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="field">
+                            <label for="contact-interest">Interested in</label>
+                            <div class="select">
+                                <select id="contact-interest" name="interest">
+                                    <option value="" selected>Select a product</option>
+                                    <option value="Sisu Studio (content)">Sisu Studio (content)</option>
+                                    <option value="Sisu Signal (market intelligence)">Sisu Signal (market
+                                        intelligence)</option>
+                                    <option value="Sisu Pipeline (lead generation)">Sisu Pipeline (lead generation)
+                                    </option>
+                                    <option value="Sisu Concierge (customer conversations)">Sisu Concierge (customer
+                                        conversations)</option>
+                                    <option value="Full suite or custom build">Full suite or custom build</option>
+                                    <option value="Not sure yet">Not sure yet</option>
+                                </select>
+                                <i class="ph ph-caret-down" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="contact-company">Company</label>
-                                <input type="text" id="contact-company" name="company" placeholder="Acme Corp" autocomplete="organization">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-website">Company Website</label>
-                                <input type="url" id="contact-website" name="website" placeholder="https://acme.com" autocomplete="url">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contact-budget">Budget Range</label>
-                            <div class="select-wrapper">
+                        <div class="field">
+                            <label for="contact-budget">Budget range</label>
+                            <div class="select">
                                 <select id="contact-budget" name="budget">
-                                    <option value="" disabled selected>Select your budget range</option>
+                                    <option value="" selected>Select a range</option>
                                     <option value="Under $2,000">Under $2,000</option>
-                                    <option value="$2,000 - $5,000">$2,000 - $5,000</option>
-                                    <option value="$5,000 - $15,000">$5,000 - $15,000</option>
-                                    <option value="$15,000 - $50,000">$15,000 - $50,000</option>
+                                    <option value="$2,000 - $5,000">$2,000 – $5,000</option>
+                                    <option value="$5,000 - $15,000">$5,000 – $15,000</option>
+                                    <option value="$15,000 - $50,000">$15,000 – $50,000</option>
                                     <option value="$50,000+">$50,000+</option>
                                 </select>
-                                <i class="ph ph-caret-down select-arrow"></i>
+                                <i class="ph ph-caret-down" aria-hidden="true"></i>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label for="contact-message">Message <span class="required">*</span></label>
-                            <textarea id="contact-message" name="message" rows="5" placeholder="Tell us about your business, current challenges, and what you're hoping to achieve with AI automation..." required></textarea>
-                            <span class="field-error" id="error-message"></span>
-                        </div>
+                    </div>
+                    <div class="field">
+                        <label for="contact-message">What would you like to automate first? <span
+                                class="req">*</span></label>
+                        <textarea id="contact-message" name="message" rows="4"
+                            placeholder="A few lines about your team, your goals and where things slow down today."
+                            required></textarea>
+                        <span class="field-error" id="error-message"></span>
+                    </div>
 
-                        <div class="form-status" id="form-status" aria-live="polite"></div>
+                    <div class="form-status" id="form-status" aria-live="polite"></div>
 
-                        <button type="submit" class="btn btn-primary btn-large form-submit" id="form-submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loading" hidden>
-                                <i class="ph ph-circle-notch ph-spin"></i> Sending…
-                            </span>
-                        </button>
-                    </form>
-                </div>
+                    <button type="submit" class="btn btn-dark btn-lg btn-block" id="form-submit-btn">
+                        <span class="btn-text">Request a demo</span>
+                        <span class="btn-loading" hidden><i class="ph ph-circle-notch ph-spin" aria-hidden="true"></i>
+                            Sending…</span>
+                    </button>
+                    <p class="form-note">We reply within 1–2 business days. No spam, ever.</p>
+                </form>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="cta-section section-gradient">
-            <div class="container text-center fade-in-up">
-                <h2 class="text-white">Is Your Business AI-Ready?</h2>
-                <p class="text-white cta-subtitle">The future isn't waiting. While you're reading this, your competitors
-                    are deploying AI to work faster, serve better, and scale more efficiently. The good news? Getting
-                    started is easier than you think.</p>
-                <div class="cta-actions">
-                    <a href="#contact" class="btn btn-white btn-large">Contact Us Now</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
-    <footer class="footer section-dark">
-        <div class="container footer-container">
+    <footer class="footer">
+        <div class="container footer-inner">
             <div class="footer-brand">
-                <img src="branding/sisu-ai-logo-primary-horizontal-dark-bg.svg" alt="Sisu AI Logo"
-                    class="footer-logo">
-                <p class="footer-tagline">Transform Your Business Operations with AI That Actually Works.</p>
-                <p class="footer-email"><i class="ph ph-envelope"></i> info@sisuai.net</p>
+                <img src="branding/sisu-ai-logo-primary-horizontal-dark-bg.svg" alt="Sisu AI" width="140" height="35">
+                <p class="footer-tagline">AI agents for marketing, sales and customer teams.</p>
+                <a class="footer-email" href="mailto:info@sisuai.net"><i class="ph ph-envelope-simple"
+                        aria-hidden="true"></i> info@sisuai.net</a>
                 <div class="footer-legal">
-                    <p>sisuai.net is a brand of <span class="footer-legal-name">ARTIFICIAL INTELLIGENCE AUTOMATION SOLUTIONS JOINT STOCK COMPANY</span>.</p>
-                    <p>No. 30-32 Vuong Thua Vu, Khuong Dinh Ward, Hanoi City, Vietnam · <a href="tel:+84886098861">0886098861</a></p>
+                    <p>sisuai.net is a brand of <span class="footer-legal-name">ARTIFICIAL INTELLIGENCE AUTOMATION
+                            SOLUTIONS JOINT STOCK COMPANY</span>.</p>
+                    <p>No. 30-32 Vuong Thua Vu, Khuong Dinh Ward, Hanoi City, Vietnam · <a
+                            href="tel:+84886098861">0886098861</a></p>
                 </div>
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Solutions</h4>
-                    <a href="#solutions">Marketing AI Agent</a>
-                    <a href="#solutions">Sales AI Agent</a>
-                    <a href="#solutions">Customer Support AI</a>
-                    <a href="#process">Workflow Automation</a>
-                    <a href="#process">AI Strategy & Roadmap</a>
+            <div class="footer-cols">
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <a href="#studio">Sisu Studio</a>
+                    <a href="#signal">Sisu Signal</a>
+                    <a href="#pipeline">Sisu Pipeline</a>
+                    <a href="#concierge">Sisu Concierge</a>
+                    <a href="#platform">Sisu Core</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <a href="#solutions">Marketing</a>
+                    <a href="#solutions">Sales</a>
+                    <a href="#solutions">Customer experience</a>
+                    <a href="#solutions">Leadership &amp; ops</a>
+                </div>
+                <div class="footer-col">
                     <h4>Company</h4>
-                    <a href="#process">Our Process</a>
-                    <a href="#testimonials">Client Impact</a>
+                    <a href="#company">About</a>
+                    <a href="#customers">Customers</a>
+                    <a href="mailto:info@sisuai.net?subject=Careers%20at%20Sisu%20AI">Careers</a>
                     <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-column">
+                <div class="footer-col">
                     <h4>Legal</h4>
                     <a href="#">Terms of Service</a>
                     <a href="#">Privacy Policy</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom container">
-            <p>&copy; 2026 Sisu AI. All rights reserved.</p>
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year">2026</span> Sisu AI. All rights reserved.</p>
+            <p>Hanoi, Vietnam</p>
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/site.js"></script>
 </body>
 
 </html>
