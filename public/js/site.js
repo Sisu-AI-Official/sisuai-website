@@ -107,6 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contact-form');
     if (!form) return;
 
+    // Preselect "Interested in" when linked as /?product=<slug>#contact (e.g. from sisu-voice.html)
+    const product = new URLSearchParams(location.search).get('product');
+    const productOption = product && form.querySelector(`option[data-product="${CSS.escape(product)}"]`);
+    if (productOption) productOption.selected = true;
+
     const submitBtn = document.getElementById('form-submit-btn');
     const btnText = submitBtn.querySelector('.btn-text');
     const btnLoading = submitBtn.querySelector('.btn-loading');
