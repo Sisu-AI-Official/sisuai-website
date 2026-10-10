@@ -1539,6 +1539,259 @@ h4 {
     background: var(--grad);
 }
 
+/* --- Sisu Voice (links to sisu-voice.html) --- */
+.voice-card {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 56px;
+    align-items: center;
+    padding: 56px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 28px;
+    box-shadow: var(--shadow-md);
+}
+
+.voice-copy h2 {
+    font-size: clamp(2rem, 3.6vw, 3rem);
+    letter-spacing: -0.035em;
+    line-height: 1.06;
+    margin-bottom: 18px;
+}
+
+.voice-copy > p {
+    font-size: 1.0625rem;
+    color: var(--muted);
+}
+
+.voice-points {
+    margin-top: 28px;
+}
+
+.voice-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    margin-top: 32px;
+}
+
+.voice-powered {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.voice-powered i {
+    font-size: 18px;
+    color: var(--blue-deep);
+}
+
+.voice-visual {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 420px;
+    padding: 32px;
+    border-radius: var(--radius-lg);
+    background:
+        radial-gradient(closest-side at 70% 20%, rgba(59, 130, 246, 0.35), transparent),
+        radial-gradient(closest-side at 20% 90%, rgba(6, 182, 212, 0.22), transparent),
+        var(--night);
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.voice-visual::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 36px 36px;
+}
+
+.voice-call {
+    width: 100%;
+    max-width: 360px;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+    transform: rotate(-1.5deg);
+}
+
+.voice-call-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--line);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+.voice-time {
+    margin-left: auto;
+    color: var(--faint);
+}
+
+.voice-live {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.18);
+}
+
+.voice-call-mid {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 18px;
+}
+
+.voice-avatar {
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    color: #fff;
+    background: var(--grad);
+}
+
+.voice-call-mid strong,
+.voice-call-mid span {
+    display: block;
+}
+
+.voice-call-mid strong {
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-size: 15px;
+}
+
+.voice-call-mid div span {
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.voice-bars {
+    display: flex !important;
+    align-items: center;
+    gap: 3px;
+    height: 26px;
+    margin-left: auto;
+}
+
+.voice-bars i {
+    width: 3px;
+    border-radius: 3px;
+    background: var(--grad);
+    animation: voice-bars 1.1s ease-in-out infinite alternate;
+}
+
+.voice-bars i:nth-child(1),
+.voice-bars i:nth-child(7) {
+    height: 8px;
+}
+
+.voice-bars i:nth-child(2),
+.voice-bars i:nth-child(6) {
+    height: 16px;
+    animation-delay: 0.2s;
+}
+
+.voice-bars i:nth-child(3),
+.voice-bars i:nth-child(5) {
+    height: 24px;
+    animation-delay: 0.35s;
+}
+
+.voice-bars i:nth-child(4) {
+    height: 12px;
+    animation-delay: 0.1s;
+}
+
+@keyframes voice-bars {
+    to {
+        transform: scaleY(0.45);
+    }
+}
+
+.voice-line {
+    margin: 0 18px 18px;
+    padding: 14px 16px;
+    border-radius: 12px 12px 12px 4px;
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+}
+
+.voice-line p {
+    font-size: 14px;
+    color: var(--ink);
+}
+
+.voice-line span {
+    display: block;
+    margin-top: 4px;
+    font-size: 12.5px;
+    font-style: italic;
+    color: var(--muted);
+}
+
+.voice-call-done {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 18px;
+    background: #ECFDF5;
+    color: #047857;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.voice-call-done i {
+    font-size: 17px;
+}
+
+@media (max-width: 960px) {
+    .voice-card {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px;
+    }
+
+    .voice-visual {
+        min-height: 360px;
+    }
+}
+
+@media (max-width: 720px) {
+    .voice-card {
+        padding: 24px;
+        border-radius: var(--radius-lg);
+    }
+
+    .voice-visual {
+        min-height: 0;
+        padding: 32px 16px;
+    }
+}
+
 /* --- Platform (dark) --- */
 .section-dark {
     background: var(--night);

@@ -13,6 +13,7 @@ stands alone — clone and work on it directly.
 public/                                 # Netlify publish dir (the deployed files)
   index.html                            #   Main landing page (English) -> css/site.css, js/site.js
   one-person-company-workshop.html      #   Workshop landing page (Vietnamese) -> css/styles.css, js/app.js
+  sisu-voice.html                       #   Sisu Voice product page (English) -> css/sisu-voice.css, js/sisu-voice.js
   _redirects                            #   Netlify URL redirects
   css/  js/  images/  branding/
 functions/
